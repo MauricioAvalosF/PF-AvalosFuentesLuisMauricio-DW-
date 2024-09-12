@@ -516,7 +516,7 @@ footer .derechos {
 
     /* Tecnologias */
     .tecnologias {
-        padding: 0 30px;
+        padding: 0 0px;
     }
 
     .tecnologias h1 {
@@ -534,6 +534,11 @@ footer .derechos {
     .experiencia .container-2 {
         width: 250px;
     }
+
+    .experiencia .container .texto-info,
+.experiencia .container-2 .texto-info {
+    width: 230px;
+}
 
     /* Seccion About */
 
@@ -563,6 +568,7 @@ footer .derechos {
     }
 
     .portafolio button {
-        width: 400px;
+        width: 300px;
+        padding: 0px 25px;
     }
 }
