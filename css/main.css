@@ -317,7 +317,6 @@ section .texto {
     background-color: #4A4A4A;
     border-radius: 6px;
     width: 500px;
-    padding: 25px;
     cursor: pointer;
     border: none;
 }
