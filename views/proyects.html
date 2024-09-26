@@ -10,7 +10,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="icon" href="../img/logo-forma-removebg-preview.png" type="png">
     <title>Proyectos</title>
+    <meta name="description" content="Aqui te muestro algo de los proyectos que eh trabajo asi como sus links para que les heches un vistazo">
+
 </head>
 
 <body>
@@ -44,18 +47,39 @@
     <!-- Proyectos -->
     <main class="proyectos">
         <h1>Mi Portafolio</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit tenetur, assumenda facere vitae, quia
-            eveniet natus, dicta id aut veritatis. Ipsam cumque modi tempora esse! Blanditiis molestias voluptas maxime
-            ducimus nostrum!</p>
+        <p>A continuacion te mostrare algunos de los proyectos en los que eh trabajado a lo largo de mi trayectoria como desarrollo Web. Cabe mencionar que cada una de estas paginas son auto-administrables y responsivas, esto quiere decir que el cliente puede administrar el contenido de su pagina mediante un sesion de admistrador creada completamente e implementada por mi y por un equipo de desarrollo, a la vez que la pagina se adapta a diferentes tamaños de disposiotivos.</p>
     </main>
 
     <section class="portafolio">
-        <button type="button" id="liveToastBtn">
-            <img src="../img/pagina.jpeg" alt="">
-            <h2>Proyecto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati mollitia aspernatur iusto modi
-                necessitatibus. Voluptates mollitia rem laboriosam commodi quaerat.</p>
-        </button>
+        <a href="https://wozial.com/public/" target="_blank">
+            <img src="../img/wozial.png" alt="">
+            <h2>Wozial</h2>
+            <p>Esta pagina fue desarrollada para la empresa en la que estoy trabajando, mi labor fue actualizar y volver a desarrollar todo el FrontEnd y el BackEnd para dejar un proyecto totalmente diferente al que tenian, ya que lo habian hecho con plantillas. https://wozial.com/public/</p>
+        </a>
+
+        <a href="https://www.mardemielgdl.com/" target="_blank">
+            <img src="../img/mardemiel.png" alt="">
+            <h2>Mar de Miel</h2>
+            <p>El giro de empresa yace a un institucion de desarrollo personal y emocional para niños pequeños, ayudandolos con su viaje de autoconocimiento y conciencia hacia el el mundo exterior/ personas y situaciones que los rodean. https://www.mardemielgdl.com/</p>
+        </a>
+
+        <a href="https://wozial.com/fungipeople/" target="_blank">
+            <img src="../img/fungi.png" alt="">
+            <h2>FungiPeople</h2>
+            <p>Este Desarrollo fue para una pagina de venta de hongos y derivados del mismo, esta pagina es un e-commerce diseñada espesificamente para el cliente, cuenta con una pasarela de pagos, administracion de productos, filtros, categorias, etc. https://wozial.com/fungipeople/</p>
+        </a>
+
+        <a href="https://www.tatora.mx/" target="_blank">
+            <img src="../img/tatora.png" alt="">
+            <h2>Tatora</h2>
+            <p>Empresa con más de 30 años de experiencia en la fabricación y mantenimiento de moldes para la industria de los envases plásticos. Ellos querian un sistema web sencillo, con sus vistas como contacto, nosotros, sus productos/soluciones. https://www.tatora.mx/</p>
+        </a>
+
+        <a href="https://proyectoswozial.com/sektor_test/" target="_blank">
+            <img src="../img/sektor.png" alt="">
+            <h2>RH-Sektor</h2>
+            <p>En desarrollo web el cliente queria un CMS para la administracion de vacantes en su empresa, asi como tambien la administracion de todas las postulaciones, ayudando a mejorar los procesos con eficiencia para las personas de RH que gestionan las vacantes. https://proyectoswozial.com/sektor_test/</p>
+        </a>
         <!-- Elemento de Bootstrap -->
         <div class="toast-container position-fixed top-0 end-0 p-3">
             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
@@ -69,6 +93,12 @@
             </div>
         </div>
     </section>
+
+    <section class="boton-mas">
+        <button type="button" id="liveToastBtn" class="btn btn-primary">Ver más</button>
+    </section>
+
+    
     <!-- FinProyectos -->
 
     <!-- Footer -->
@@ -77,19 +107,19 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="">Sobre mi</a>
+                    <a href="./views/about.html">Sobre mi</a>
                 </li>
                 <li>
-                    <a href="">Tecnologias</a>
+                    <a href="./views/info.html">Tecnologias</a>
                 </li>
                 <li>
-                    <a href="">Proyectos</a>
+                    <a href="./views/proyects.html">Proyectos</a>
                 </li>
                 <li>
-                    <a href="">Contacto</a>
+                    <a href="./views/contact.html">Contacto</a>
                 </li>
             </ul>
         </nav>

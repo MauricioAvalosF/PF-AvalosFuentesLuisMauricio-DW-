@@ -1,574 +1,425 @@
-/* Reset */
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-/* Color de la pagina */
 body {
-    background-color: #1E1E1E !important;
+  background-color: #1E1E1E !important;
 }
 
-/* Estilos generales */
 .btn-cstm {
-    background-color: #4A4A4A;
-    border: none;
-    padding: 10px 20px;
-    color: #ffffff;
-    border-radius: 6px;
-    transition: all ease 0.1s;
+  background-color: #4A4A4A;
+  border: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: all ease 0.1s;
 }
-
 .btn-cstm:hover {
-    background-color: #009688;
-    color: #1E1E1E;
+  background-color: #009688;
+  color: #1E1E1E;
 }
 
-/* Estilos del header y nav */
 header {
-    background-color: #2D2D2D;
-    padding: 0px 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #2D2D2D;
+  padding: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
 }
-
 header a img {
-    width: 5rem;
-    height: 5rem;
+  width: 5rem;
+  height: 5rem;
 }
-
 header nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
 }
-
 header nav ul li {
-    list-style: none;
+  list-style: none;
 }
-
 header nav ul li a {
-    text-decoration: none;
-    color: #B0B0B0;
+  text-decoration: none;
+  color: #B0B0B0;
 }
-
 header nav ul li a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
-/* Estilos del main */
 .principal {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 30px;
 }
-
-.principal .carrusel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 100%;
-    margin-top: 3rem;
-}
-
 .principal h1 {
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-    margin-top: 30px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
 }
-
+.principal .carrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+}
 .principal .carrusel img {
-    width: 100%;
-    margin-top: 0px;
+  width: 100%;
+  height: 18rem;
+  object-fit: contain;
+  margin-top: 0;
 }
-
 .principal .carrusel img:last-child {
-    display: none;
+  display: none;
 }
-
-
 .principal p {
-    color: #B0B0B0;
-    margin: 20px 80px;
-    text-align: center;
-    text-wrap: balance;
+  color: #B0B0B0;
+  margin: 20px 30rem;
+  text-align: center;
+  text-wrap: balance;
 }
 
-/* Estilos de la seccion de Valores */
 section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 80px;
 }
-
 section h2 {
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
 }
-
 section .texto {
-    color: #B0B0B0;
-    margin: 10px 20%;
-    text-align: center;
-    text-wrap: balance;
+  color: #B0B0B0;
+  margin: 10px 20%;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .valores div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2D2D2D;
-    border-radius: 6px;
-    width: 300px;
-    padding: 20px
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D2D2D;
+  border-radius: 6px;
+  width: 300px;
+  padding: 20px;
 }
-
 .valores div i {
-    color: #ffffff;
-    font-size: 40px;
+  color: #ffffff;
+  font-size: 40px;
 }
-
 .valores div h3 {
-    margin: 10px 0px;
-    color: #B0B0B0;
-    text-align: center;
+  margin: 10px 0;
+  color: #B0B0B0;
+  text-align: center;
 }
-
 .valores div p {
-    color: #B0B0B0;
-    text-align: justify;
+  color: #B0B0B0;
+  text-align: justify;
 }
 
-/* Seccion About */
+.trabajo {
+  padding: 0rem 30%;
+}
+.trabajo p {
+  white-space: pre-wrap;
+  text-align: justify;
+  text-wrap: balance;
+}
+.trabajo ol li {
+  color: #B0B0B0;
+  list-style: circle;
+  margin-bottom: 2rem;
+}
+.trabajo ol li span {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
 .acerca {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.acerca div {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
 .acerca h1 {
-    color: #ffffff;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
 }
-
 .acerca .about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
-
 .acerca .about img {
-    height: 400px;
+  height: 400px;
 }
-
 .acerca .about p {
-    color: #B0B0B0;
-    width: 500px;
-    text-align: center;
-    text-wrap: balance;
+  color: #B0B0B0;
+  width: 500px;
+  text-align: center;
+  text-wrap: balance;
+  white-space: pre-wrap;
 }
 
 .recomendaciones div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Contacto */
 .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .contacto h1 {
-    color: #ffffff;
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
-
 .contacto p {
-    width: 600px;
-    text-align: center;
-    color: #B0B0B0;
+  width: 600px;
+  text-align: center;
+  color: #B0B0B0;
 }
-
-.contacto input {
-    width: 500px;
-    height: 20px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 6px;
-}
-
+.contacto input,
 .contacto textarea {
-    padding: 1rem;
-    width: 500px;
-    border-radius: 6px;
+  width: 500px;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
-/* Tecnologias */
 .tecnologias {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .tecnologias h1 {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 .tecnologias p {
-    width: 600px;
-    text-align: center;
-    color: #B0B0B0;
+  width: 600px;
+  text-align: center;
+  color: #B0B0B0;
 }
 
 .experiencia {
-    display: flex;
+  display: flex;
 }
-
-.experiencia .container {
-    width: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 30px;
-    cursor: pointer;
+.experiencia .container, .experiencia .container-2 {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
-
+.experiencia .container img, .experiencia .container-2 img {
+  width: 200px;
+}
+.experiencia .container .texto-info, .experiencia .container-2 .texto-info {
+  width: 500px;
+}
+.experiencia .container .texto-info p, .experiencia .container-2 .texto-info p {
+  color: #B0B0B0;
+  text-align: justify;
+  text-wrap: balance;
+}
 .experiencia .container-2 {
-    cursor: pointer;
-    width: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 30px;
+  flex-direction: row-reverse;
 }
 
-.experiencia .container img,
-.experiencia .container-2 img {
-    width: 200px;
-}
-
-.experiencia .container .texto-info,
-.experiencia .container-2 .texto-info {
-    width: 500px;
-}
-
-.experiencia .container .texto-info p,
-.experiencia .container-2 .texto-info p {
-    color: #B0B0B0;
-    text-align: justify;
-    text-wrap: balance;
-}
-
-/* Proyectos */
 .proyectos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .proyectos h1 {
-    color: #ffffff;
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
-
 .proyectos p {
-    width: 600px;
-    text-align: center;
-    color: #B0B0B0;
+  width: 600px;
+  text-align: center;
+  color: #B0B0B0;
 }
 
 .portafolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portafolio a {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4A4A4A;
+  border-radius: 6px;
+  width: 500px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.portafolio a img {
+  width: 300px;
+}
+.portafolio a h2 {
+  margin: 15px 0;
+}
+.portafolio a p {
+  color: #B0B0B0;
+  text-align: justify;
+  padding: 0 3rem;
+  text-wrap: balance;
 }
 
-.portafolio button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4A4A4A;
-    border-radius: 6px;
-    width: 500px;
-    cursor: pointer;
-    border: none;
-}
-
-.portafolio button img {
-    width: 300px;
-}
-
-.portafolio button h2 {
-    margin: 15px 0px;
-}
-
-.portafolio button p {
-    color: #B0B0B0;
-    text-align: justify;
-    text-wrap: balance;
-}
-
-/* Footer */
 footer {
-    background-color: #2D2D2D;
-    padding: 20px 0px;
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  background-color: #2D2D2D;
+  padding: 20px 0;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 footer nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
-
 footer nav ul li {
-    list-style: none;
+  list-style: none;
 }
-
 footer nav ul li a {
-    color: #B0B0B0;
-    text-decoration: none;
+  color: #B0B0B0;
+  text-decoration: none;
 }
-
 footer nav ul li a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 footer div {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-
 footer div i {
-    color: #B0B0B0;
-    font-size: 20px;
+  color: #B0B0B0;
+  font-size: 20px;
 }
-
 footer div i:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
-
 footer .derechos {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-    color: #ffffff;
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+  color: #ffffff;
 }
 
 @media (max-width: 992px) {
-
-    /* Estilos del header y nav */
-    header {
-        padding: 0px 50px;
-    }
-
-    header nav ul {
-        flex-direction: wrap;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    header nav ul li {
-        list-style: none;
-        text-decoration: solid underline 1px #fff;
-    }
-
-    /* Estilos del main */
-    .principal .carrusel {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        width: 100%;
-        margin-top: 3rem;
-    }
-
-    .principal .carrusel img {
-        width: 100%;
-        display: block;
-    }
-
-    .principal .carrusel img:first-child,
-    .principal .carrusel img:last-child {
-        display: none;
-    }
-
-    .principal p {
-        color: #B0B0B0;
-        margin: 20px 40px;
-        text-align: center;
-        text-wrap: balance;
-    }
-
-    /* Estilos de la seccion de Valores */
-    section .texto {
-        color: #B0B0B0;
-        margin: 10px 40px;
-        text-align: center;
-        text-wrap: balance;
-    }
-
-    .valores div {
-        width: 200px;
-    }
-
-    /* Tecnologias */
-    .experiencia .container {
-        flex-direction: column;
-    }
-
-    .experiencia .container-2 {
-        flex-direction: column;
-    }
+  header {
+    padding: 0px 50px;
+  }
+  header nav ul {
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  header nav ul li {
+    list-style: none;
+    text-decoration: solid underline 1px #fff;
+  }
+  .principal .carrusel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .principal .carrusel img {
+    width: 100%;
+    display: block;
+  }
+  .principal .carrusel img:first-child,
+  .principal .carrusel img:last-child {
+    display: none;
+  }
+  .principal p {
+    color: #B0B0B0;
+    margin: 20px 40px;
+    padding: 0 0;
+    text-align: center;
+    text-wrap: balance;
+  }
+  section .texto {
+    color: #B0B0B0;
+    margin: 10px 40px;
+    text-align: center;
+    text-wrap: balance;
+  }
+  .valores div {
+    width: 200px;
+  }
+  .experiencia .container {
+    flex-direction: column;
+  }
+  .experiencia .container-2 {
+    flex-direction: column;
+  }
 }
-
 @media (max-width: 576px) {
-
-    /* Estilos del header y nav */
-    header {
-        padding: 0px 50px;
-    }
-
-    header nav ul {
-        flex-direction: wrap;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    header nav ul li {
-        text-decoration: solid underline 1px #fff;
-    }
-
-    /* Estilos del main */
-    .principal .carrusel {
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-    }
-
-    .principal .carrusel img:first-child {
-        display: block;
-        width: 100%;
-    }
-
-    .principal .carrusel img {
-        display: none;
-    }
-
-    .principal p {
-        color: #B0B0B0;
-        margin: 20px 40px;
-        text-align: center;
-        text-wrap: balance;
-    }
-
-    /* Estilos de la seccion de Valores */
-    section .texto {
-        color: #B0B0B0;
-        margin: 10px 40px;
-        text-align: center;
-        text-wrap: balance;
-    }
-
-    .valores div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #2D2D2D;
-        border-radius: 6px;
-        width: 150px;
-        padding: 20px
-    }
-
-    /* Tecnologias */
-    .tecnologias {
-        padding: 0 0px;
-    }
-
-    .tecnologias h1 {
-        text-align: center;
-    }
-
-    .tecnologias p {
-        width: 200px;
-    }
-
-    .experiencia .container {
-        width: 250px;
-    }
-
-    .experiencia .container-2 {
-        width: 250px;
-    }
-
-    .experiencia .container .texto-info,
-.experiencia .container-2 .texto-info {
-    width: 230px;
+  header {
+    padding: 0px 50px;
+  }
+  header nav ul {
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .about {
+    display: wrap;
+    flex-wrap: wrap;
+  }
 }
 
-    /* Seccion About */
-
-    .acerca .about p {
-        margin-top: 2rem;
-        width: 350px;
-    }
-
-    /* Contacto */
-    .contacto p {
-        width: 300px;
-        text-align: center;
-        color: #B0B0B0;
-    }
-
-    .contacto input {
-        width: 300px;
-    }
-
-    .contacto textarea {
-        width: 300px;
-    }
-
-    /* Proyectos */
-    .proyectos p {
-        width: 300px;
-    }
-
-    .portafolio button {
-        width: 300px;
-        padding: 0px 25px;
-    }
-    
-}
+/*# sourceMappingURL=main.css.map */
