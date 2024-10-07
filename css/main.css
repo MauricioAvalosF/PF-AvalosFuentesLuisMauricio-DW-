@@ -192,6 +192,13 @@ section .texto {
   flex-wrap: wrap;
   gap: 20px;
 }
+.recomendaciones .boton-mas button {
+  color: #ffffff;
+  background-color: #4A4A4A;
+}
+.recomendaciones .boton-mas button:hover {
+  background-color: #009688;
+}
 
 .contacto {
   display: flex;
@@ -214,6 +221,14 @@ section .texto {
   padding: 1rem;
   border-radius: 6px;
   margin-bottom: 1rem;
+}
+.contacto button {
+  background-color: #4A4A4A;
+  color: #ffffff;
+  border: none;
+}
+.contacto button:hover {
+  background-color: #009688;
 }
 
 .tecnologias {
@@ -304,6 +319,15 @@ section .texto {
   text-align: justify;
   padding: 0 3rem;
   text-wrap: balance;
+}
+
+.boton-mas button {
+  background: #4A4A4A;
+  color: #ffffff;
+}
+.boton-mas button:hover {
+  background-color: #009688;
+  color: #ffffff;
 }
 
 footer {
@@ -440,13 +464,6 @@ footer .derechos {
     text-wrap: balance;
     white-space: pre-wrap;
   }
-  .boton-mas button {
-    color: #ffffff;
-    background-color: #4A4A4A;
-  }
-  .boton-mas button:hover {
-    background-color: #009688;
-  }
   .tecnologias p {
     width: 300px;
     text-align: center;
@@ -473,14 +490,6 @@ footer .derechos {
   }
   .contacto textarea {
     width: 300px;
-  }
-  .contacto button {
-    background-color: #4A4A4A;
-    color: #ffffff;
-    border: none;
-  }
-  .contacto button:hover {
-    background-color: #009688;
   }
   .about {
     display: wrap;

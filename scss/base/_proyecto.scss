@@ -187,10 +187,21 @@ section {
 }
 
 // Recomendaciones
-.recomendaciones div {
-  @include flex-center(row, center, center);
-  flex-wrap: wrap;
-  gap: 20px;
+.recomendaciones {
+  div {
+    @include flex-center(row, center, center);
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .boton-mas button {
+    color: $white-color;
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
 }
 
 // Contacto
@@ -214,6 +225,17 @@ section {
     padding: 1rem;
     border-radius: 6px;
     margin-bottom: 1rem;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: $white-color;
+    border: none;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
   }
 }
 
@@ -309,6 +331,18 @@ section {
       text-align: justify;
       padding: 0 3rem;
       text-wrap: balance;
+    }
+  }
+}
+
+.boton-mas {
+  button {
+    background: $primary-color;
+    color: $white-color;
+
+    &:hover {
+      background-color: $hover-color;
+      color: $white-color;
     }
   }
 }
@@ -466,15 +500,6 @@ footer {
     }
   }
 
-  .boton-mas button {
-    color: $white-color;
-    background-color: $primary-color;
-
-    &:hover {
-      background-color: $hover-color;
-    }
-  }
-
   .tecnologias p {
     width: 300px;
     text-align: center;
@@ -520,18 +545,6 @@ footer {
   .contacto {
     textarea {
       width: 300px;
-    }
-  }
-
-  .contacto {
-    button {
-      background-color: $primary-color;
-      color: $white-color;
-      border: none;
-
-      &:hover {
-        background-color: $hover-color;
-      }
     }
   }
 
