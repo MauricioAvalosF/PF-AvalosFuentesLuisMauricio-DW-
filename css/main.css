@@ -416,6 +416,72 @@ footer .derechos {
     justify-content: center;
     gap: 15px;
   }
+  .valores {
+    display: flex;
+    flex-direction: column;
+  }
+  .valores div {
+    width: 250px;
+  }
+  .trabajo {
+    padding: 0rem 10%;
+  }
+  .acerca .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .acerca .about p {
+    color: #B0B0B0;
+    width: 300px;
+    text-align: center;
+    text-wrap: balance;
+    white-space: pre-wrap;
+  }
+  .boton-mas button {
+    color: #ffffff;
+    background-color: #4A4A4A;
+  }
+  .boton-mas button:hover {
+    background-color: #009688;
+  }
+  .tecnologias p {
+    width: 300px;
+    text-align: center;
+    color: #B0B0B0;
+  }
+  .experiencia .container .texto-info {
+    width: 300px;
+  }
+  .experiencia .container-2 .texto-info {
+    width: 300px;
+  }
+  .proyectos p {
+    width: 300px;
+    text-align: center;
+    color: #B0B0B0;
+  }
+  .contacto p {
+    width: 300px;
+    text-align: center;
+    color: #B0B0B0;
+  }
+  .contacto input {
+    width: 300px;
+  }
+  .contacto textarea {
+    width: 300px;
+  }
+  .contacto button {
+    background-color: #4A4A4A;
+    color: #ffffff;
+    border: none;
+  }
+  .contacto button:hover {
+    background-color: #009688;
+  }
   .about {
     display: wrap;
     flex-wrap: wrap;
